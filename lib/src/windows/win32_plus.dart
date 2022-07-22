@@ -1,13 +1,14 @@
 // ignore_for_file: non_constant_identifier_names
 
 import 'dart:ui';
-import 'package:win32/win32.dart';
+
+import 'package:win32/win32.dart' hide Rect, Size;
 
 extension RECTtoRect on RECT {
-  Rect get toRect => Rect.fromLTRB(this.left.toDouble(), this.top.toDouble(),
-      this.right.toDouble(), this.bottom.toDouble());
+  Rect get toRect => Rect.fromLTRB(
+      left.toDouble(), top.toDouble(), right.toDouble(), bottom.toDouble());
 }
 
 extension SIZEtoSize on SIZE {
-  Size get toSize => Size(this.cx.toDouble(), this.cy.toDouble());
+  Size get toSize => Size(cx.toDouble(), cy.toDouble());
 }
