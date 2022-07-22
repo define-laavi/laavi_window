@@ -1,10 +1,9 @@
 name: laavi_window
 description: A new Flutter FFI plugin project.
 version: 0.0.1
-homepage:
 
 environment:
-  sdk: '>=2.18.0-109.0.dev <3.0.0'
+  sdk: '>=2.17.0-109.0.dev <3.0.0'
   flutter: ">=2.11.0"
 
 dependencies:
